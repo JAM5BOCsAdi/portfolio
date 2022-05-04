@@ -2,9 +2,6 @@
 
 /**
  * 
- * XAMPP CONTROL PANEL: 
- * http://localhost/works/portfolio-website-1/ 
- * 
  * PHP Form Required:
  * https://www.w3schools.com/php/php_form_required.asp
  * 

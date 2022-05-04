@@ -1,4 +1,10 @@
 <?php
+/**
+ * 
+ * XAMPP CONTROL PANEL: 
+ * http://localhost/works/portfolio-website-1/ 
+ * 
+ */
 $server = 'localhost';
 $username = 'root';
 $password = '';
