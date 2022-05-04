@@ -26,8 +26,10 @@ if(!empty($name) && !empty($email) && !empty($subject)){
     */
 
     require_once "config.php";
+    
+    $filename= 'C:\xampp\htdocs\works\portfolio-website-1\config.php';
 
-    if("config.php"){   
+    if(file_exists($filename)){   
         $select = "SELECT email FROM connection_portfolio WHERE email = '$email' LIMIT 1 ";
         
         $result = $link -> query($select);
