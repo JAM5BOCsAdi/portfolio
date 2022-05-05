@@ -20,10 +20,13 @@
 <body>
 <canvas id="canvas" style="display: none"></canvas>
 <div id="score" class="">
-    <h2>Kerestek</h2>
+    <h2>Felkeresések</h2>
+    <h3>Sorrend: 
+        Legújabb felkereséstől a legrégebbiig
+    </h3>
         <table>
             <tr>
-                
+                <td>Sorrend</td>
                 <td>Név</td>
                 <td>E-mail</td>
                 <td>Tárgy</td>
@@ -44,7 +47,7 @@
                     while ($row = mysqli_fetch_array($result)) {
                         echo "
                         <tr>
-                            
+                            <td>{$ranking}</td>
                             <td>{$row['name']}</td>
                             <td>{$row['email']}</td>
                             <td>{$row['subject']}</td>
@@ -64,7 +67,6 @@
                 $phpWinner = $_GET['winner'];*/
 
             ?>
-
     </table>
     <div id="buttons">
         <a href="logout.php">Back</a>
