@@ -1,0 +1,78 @@
+<?php
+    // Initialize the session
+    session_start();
+
+    // Check if the user is already logged in, if yes then redirect him to welcome page
+    if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+        echo '<script>alert("Már be van jelentkezve!")</script>';
+        exit;
+    }
+
+    // Include config file
+    require_once "config.php";
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Admin</title>
+</head>
+<body>
+<canvas id="canvas" style="display: none"></canvas>
+<div id="score" class="">
+    <h2>Kerestek</h2>
+        <table>
+            <tr>
+                <td>Sorszám</td>
+                <td>Név</td>
+                <td>E-mail</td>
+                <td>Tárgy</td>
+                <td>Megjegyzés</td>
+            </tr>
+            <?php
+                /* Mysqli query to fetch rows 
+                in descending order of scores */
+                $result = mysqli_query($link, "SELECT name, email, subject, textarea  FROM connection_portfolio ORDER BY submited_at DESC");
+
+                /* First rank will be 1 and 
+                    second be 2 and so on */
+                $ranking = 1;
+                
+                /* Fetch Rows from the SQL query */
+                if (mysqli_num_rows($result)) {
+                    while ($row = mysqli_fetch_array($result)) {
+                        echo "
+                        <tr>
+                            <td>{$ranking}</td>
+                            <td>{$row['name']}</td>
+                            <td>{$row['email']}</td>
+                            <td>{$row['subject']}</td>
+                            <td>{$row['textarea']}</td>
+                        </tr>  
+                        ";
+                        $ranking++;
+                    }
+                }
+                
+                /*$phpWinner = "<script>let winner = (parseInt(playerScoreElem.textContent) === 5) ? 'Player' : 'Computer'</script>";
+                $phpWinner = $_COOKIE['winner'];
+                $phpWinner = "<script>document.write(winner);</script>";
+                $phpWinner = $_COOKIE['winner'];
+                echo $phpWinner;
+                $phpWinner = $_GET['winner'];*/
+
+            ?>
+
+    </table>
+    <div id="buttons">
+        <a href="logout.php">Back</a>
+    </div>   
+</div>
+</body>
+</html>
