@@ -2,12 +2,6 @@
     // Initialize the session
     session_start();
 
-    // Check if the user is already logged in, if yes then redirect him to welcome page
-    if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-        echo '<script>alert("Már be van jelentkezve!")</script>';
-        exit;
-    }
-
     // Include config file
     require_once "config.php";
 
@@ -29,16 +23,17 @@
     <h2>Kerestek</h2>
         <table>
             <tr>
-                <td>Sorszám</td>
+                
                 <td>Név</td>
                 <td>E-mail</td>
                 <td>Tárgy</td>
                 <td>Megjegyzés</td>
+                <td>Dátum [ Új -> Régi ]</td>
             </tr>
             <?php
                 /* Mysqli query to fetch rows 
                 in descending order of scores */
-                $result = mysqli_query($link, "SELECT name, email, subject, textarea  FROM connection_portfolio ORDER BY submited_at DESC");
+                $result = mysqli_query($link, "SELECT name, email, subject, textarea, submited_at  FROM connection_portfolio ORDER BY submited_at DESC");
 
                 /* First rank will be 1 and 
                     second be 2 and so on */
@@ -49,11 +44,12 @@
                     while ($row = mysqli_fetch_array($result)) {
                         echo "
                         <tr>
-                            <td>{$ranking}</td>
+                            
                             <td>{$row['name']}</td>
                             <td>{$row['email']}</td>
                             <td>{$row['subject']}</td>
                             <td>{$row['textarea']}</td>
+                            <td>{$row['submited_at']}</td>
                         </tr>  
                         ";
                         $ranking++;
