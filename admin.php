@@ -58,14 +58,6 @@
                         $ranking++;
                     }
                 }
-                
-                /*$phpWinner = "<script>let winner = (parseInt(playerScoreElem.textContent) === 5) ? 'Player' : 'Computer'</script>";
-                $phpWinner = $_COOKIE['winner'];
-                $phpWinner = "<script>document.write(winner);</script>";
-                $phpWinner = $_COOKIE['winner'];
-                echo $phpWinner;
-                $phpWinner = $_GET['winner'];*/
-
             ?>
     </table>
     <div id="buttons">
