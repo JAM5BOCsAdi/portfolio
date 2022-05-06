@@ -144,12 +144,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <span class="invalid-feedback"><?php echo $password_err; ?></span>
                     </div>
                     <div class="form-group">
-                        <input type="submit" class="btn btn-primary" value="Login">
+                        <input type="submit" class="btn btn-primary" value="Belépés">
                         <a href="http://localhost/works/portfolio-website-1/?section=contact" 
                             type="button" 
                             class="btn btn-secondary" 
                             >
-                            Back
+                            Vissza
                         </a>
                         <!--<a href="reset-password.php" class="btn btn-secondary">Reset Password</a>-->
                     </div>
