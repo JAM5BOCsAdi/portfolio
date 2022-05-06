@@ -21,6 +21,7 @@
         font: 14px sans-serif;
         color: #fff;
         background-color: #191d2b;
+        caret-color: rgba(0, 0, 0, 0);
       }
       .visit{
         display: flex;
