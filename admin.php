@@ -122,7 +122,7 @@
     </table>
     <div class="back">
         <a href="logout.php" class="admin-back"
-        >Vissza</a>
+        >Kilépés</a>
     </div> 
 </div>
 </body>

@@ -24,6 +24,11 @@
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
   --color-purple: #510061;
+  --admin-btn-bg: #34495e;
+  --admin-btn-bg-shadow: #34495e;
+  --admin-btn-color: #ffffff;
+  --admin-btn-bg-hover: #ffffff;
+  --admin-btn-color-hover: #34495e;
   --pulse: #01fc40;
   --br-sm-2: 0.875rem;
   --error-color: #FF0000;
@@ -42,6 +47,11 @@
   --color-grey-5: #f8f8f8;
   --color-grey-6: #12181b;
   --color-purple: #adffff;
+  --admin-btn-bg: #ff52f1;
+  --admin-btn-bg-shadow: #ff69f2;
+  --admin-btn-color: #ffffff;
+  --admin-btn-bg-hover: #ffffff;
+  --admin-btn-color-hover: #34495e;
   --pulse: #ff69f2;
   --error-color: #FF0000;
 }
@@ -857,22 +867,23 @@ section {
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: all 0.4s ease-in-out;
       .admin-button {
-        background: #34495e;
+        background: var(--admin-btn-bg);
         padding: 10px 15px;
-        color: #fff;
+        color: var(--admin-btn-color);
         font-weight: bolder;
         text-transform: uppercase;
         font-size: 18px;
-
+        transition: all 0.4s ease-in-out;
         border-radius: 5px;
-        box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+        box-shadow: 6px 6px 29px -4px var(--admin-btn-bg-shadow);
         margin-top: 25px;
         text-decoration: none;
         transition: 0.4s;
         &:hover {
-          background: #fff;
-          color: #34495e;
+          background: var(--admin-btn-bg-hover);
+          color: var(--admin-btn-color-hover);
         }
       
       }
