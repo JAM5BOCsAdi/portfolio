@@ -8,17 +8,11 @@
  *   $password = '';
  *   $dbname = 'portfoliodb';
  */
-/*
+
 $server = 'mysql.caesar.elte.hu';
 $username = 'oradam';
 $password = 'Pcn30DFTv5zMLcR5';
-$dbname = 'portfoliodb';
-*/
-   $server = 'localhost';
-   $username = 'root';
-   $password = '';
-   $dbname = 'portfoliodb';
- 
+$dbname = 'oradam';
 
 $link = mysqli_connect($server, $username, $password, $dbname);
 

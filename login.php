@@ -145,7 +145,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                     <div class="form-group">
                         <input type="submit" class="btn btn-primary" value="Belépés">
-                        <a href="http://localhost/works/portfolio-website-1/?section=contact" 
+                        <a href="https://oradam.web.elte.hu/portfolio-website-1/?section=contact" 
                             type="button" 
                             class="btn btn-secondary" 
                             >

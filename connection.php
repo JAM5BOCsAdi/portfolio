@@ -13,18 +13,10 @@ $textarea = $_POST['textarea']; // Nem baj, ha üres
 
 if(!empty($name) && !empty($email) && !empty($subject)){
     
-    /*
-    $server = "localhost";
-    $dbusername = "root";
-    $dbpassword = "";
-    $dbname = "portfoliodb";
-    
-    $link = new mysqli($server, $dbusername, $dbpassword, $dbname);
-    */
 
     require_once "config.php";
     
-    $filename= 'C:\xampp\htdocs\works\portfolio-website-1\config.php';
+    $filename= '../oradam/web/portfolio-website-1/config.php';
 
     if(file_exists($filename)){   
         $select = "SELECT email FROM connection_portfolio WHERE email = '$email' LIMIT 1 ";
@@ -55,7 +47,7 @@ if(!empty($name) && !empty($email) && !empty($subject)){
 }
 
 // Connects back to the Connection Page
-$page = 'http://localhost/works/portfolio-website-1/?section=contact'; //The page where you want to connect back
+$page = 'https://oradam.web.elte.hu/portfolio-website-1/?section=contact'; //The page where you want to connect back
 $sec = "1"; //Connection time in second's
 header("Refresh: $sec; url=$page");
 
