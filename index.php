@@ -1,6 +1,11 @@
+<?php 
+    session_start();
+    //session_unset();
+ ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -750,5 +755,28 @@
       <i class="fas fa-adjust"></i>
     </div>
     <script src="./app.js"></script>
+    <?php 
+      if(isset($_SESSION['response'])){
+
+      
+    ?>
+    <script>
+      
+      window.onload = function(){
+        //console.log("Kész");
+        setTimeout(function(){
+          const respons = '<?php echo $_SESSION['response']; ?>';
+          alert(respons);
+          
+          console.log("Kész");
+        }, 1000);
+      } 
+    </script>
+
+    <?php 
+      $_SESSION['response'] = null;
+      }
+    ?>
+
   </body>
 </html>

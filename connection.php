@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 /**
  * 
  * PHP Form Required:
@@ -16,8 +16,8 @@ if(!empty($name) && !empty($email) && !empty($subject)){
 
     require_once "config.php";
     
-    $filename= '../oradam/web/portfolio-website-1/config.php';
-
+    $filename= $_SERVER['DOCUMENT_ROOT']."/portfolio-website-1/config.php";
+    //var_dump($_SERVER['DOCUMENT_ROOT']."/portfolio-website-1/config.php");
     if(file_exists($filename)){   
         $select = "SELECT email FROM connection_portfolio WHERE email = '$email' LIMIT 1 ";
         
@@ -25,7 +25,8 @@ if(!empty($name) && !empty($email) && !empty($subject)){
         
         if(mysqli_num_rows($result) > 0){
             //echo "Email address already registered!";
-            echo '<script>alert("Ez az e-mail cím már regisztrált!")</script>';
+            $response =  'Ez az e-mail cím már regisztrált!';
+            $_SESSION['response'] = $response;
         }
         else{
             $insert = "INSERT INTO connection_portfolio(name, email, subject, textarea) VALUES('$name','$email','$subject','$textarea')";
@@ -34,23 +35,26 @@ if(!empty($name) && !empty($email) && !empty($subject)){
             
             if($results > 0){
                 //echo "Thank you for contacting us!";
-                echo '<script>alert("Köszönöm, hogy felkeresett!")</script>';
-                
+                $response = 'Köszönöm, hogy felkeresett!';
+                $_SESSION['response'] = $response;
 
             }
             else{
                 //echo "Something went wrong!";
-                echo '<script>alert("Valami rosszul ment!")</script>';
+                $response = 'Valami rosszul ment!';
+                $_SESSION['response'] = $response;
             }
         }
     }
 }
 
-// Connects back to the Connection Page
+/* Connects back to the Connection Page
 $page = 'https://oradam.web.elte.hu/portfolio-website-1/?section=contact'; //The page where you want to connect back
 $sec = "1"; //Connection time in second's
 header("Refresh: $sec; url=$page");
-
+*/
+header("Location: https://oradam.web.elte.hu/portfolio-website-1/?section=contact");
+exit();
 /*
 $name = $_POST['name'];
 $email = $_POST['email'];
