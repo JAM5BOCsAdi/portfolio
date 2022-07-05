@@ -54,16 +54,19 @@
         </div>
         <div class="right-header">
           <h1 class="name">
-            <span class="hello">Hello</span>, Én lenni
-            <span class="adi">Ádi</span><br />
+            Hello,
+            <span class="adi">Ádi</span> vagyok<br />
             Junior Webfejlesztő
           </h1>
           <p>
-            <span>KrEaTíV</span> Front-End <span>DeSiGnEr</span><br />Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. <br />Quibusdam
-            accusamus voluptatem, ratione nihil, omnis modi at tempora<br />
-            voluptas deserunt ipsa delectus reprehenderit est, magni molestias
-            earum? <br />Optio blanditiis obcaecati sunt.
+            <span class="color">Kreatív</span> Front-End <span class="color">Designer</span><br />
+              22 éves vagyok, szombathelyi<br />
+              Sokszor találkozhattok velem kosárpályákon
+              <br /><br />
+              <span class="color">Legfőbb céljaim:</span> <br />
+              M.E.R.N, Flutter, Python, SQL, PowerBI, ... [sokminden]
+              <br /><br />
+              <span class="color">Iskolázottságommal</span> kapcsolatban a 2. oldalon megtalálhatjátok az információkat 
           </p>
           <div class="btn-container">
             <a
@@ -98,14 +101,12 @@
           <div class="left-about">
             <h4>Tudnivalók</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-              distinctio officiis. Commodi similique aliquam sed molestiae,
-              adipisci quas! Labore repudiandae neque quia, animi ratione
-
-              <br /><br />
-              Laborum obcaecati provident nemo optio neque error beatae
-              adipisci! Praesentium minima neque ad temporibus a nostrum dolores
-              animi beatae, quis voluptatem nemo.
+            Egy <span class="color">kezdő</span> volnék, aki szívesen elindulna a programozás szinte bármely területén,<br />
+            így elsőként a Front-End az ami megfogott, és ezért is szeretnék jelentkezni erre a lehetőségre.<br />
+            <br />
+            Talán még azért is ez fogott meg, mivel látom magamban a <span class="color">kreativitást</span>, meg mikor készült ez a Portfólió, akkor
+            vizuálisan egyből láttam, hogy mi hogyan változik meg. És ez a fajta <span class="color">vizualitás</span> számomra fontos volt.
+            Lehet, hogy nem vagyok a legtökéletesebb, de igyekszem az lenni. 
             </p>
             <div class="btn-container">
               <a
@@ -296,7 +297,16 @@
               <div class="progress-con">
                 <p class="prog-text">60%</p>
                 <div class="progress">
-                  <span class="cnc-code"></span>
+                  <span class="cnc-code-hand"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">CNC Kód írás (géppel)</p>
+              <div class="progress-con">
+                <p class="prog-text">100%</p>
+                <div class="progress">
+                  <span class="cnc-code-machine"></span>
                 </div>
               </div>
             </div>
@@ -304,72 +314,70 @@
         </div>
         <h4 class="stat-timeline">Idővonalam</h4>
         <div class="timeline">
+        <div class="timeline-item">
+            <div class="tl-icon6">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">... - 2007</p>
+            <h5>Ovi: Gazdag Erzsi Óvoda</h5>
+            <p>
+              Best ovi in the World :)
+            </p>
+          </div>
           <div class="timeline-item">
             <div class="tl-icon1">
               <i class="fas fa-briefcase"></i>
             </div>
-            <p class="tl-duration">2015 - napjainkig</p>
-            <h5>Középiskola: Gépipari 2015 - 2018</h5>
+            <p class="tl-duration">2007 - 2015</p>
+            <h5>Általános iskola: Zrínyi Ilona Általános Iskola</h5>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores exercitationem dolores nemo culpa pariatur quis
+              Sok mindent talán nem kell mondanom, számomra ez az iskola volt a legjobb :)
             </p>
           </div>
           <div class="timeline-item">
             <div class="tl-icon2">
               <i class="fas fa-briefcase"></i>
             </div>
-            <p class="tl-duration">2015 - napjainkig</p>
-            <h5>Középiskola: Gépipari 2015 - 2018</h5>
+            <p class="tl-duration">2015 - 2019</p>
+            <h5>Középiskola: VMSzC Gépipari és Informatikai Technikum</h5>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores exercitationem dolores nemo culpa pariatur quis
+              Érettségi -> Számítógépes Rendszerkarbantartó
             </p>
           </div>
           <div class="timeline-item">
             <div class="tl-icon3">
               <i class="fas fa-briefcase"></i>
             </div>
-            <p class="tl-duration">2015 - napjainkig</p>
-            <h5>Középiskola: Gépipari 2015 - 2018</h5>
+            <p class="tl-duration">2019 - 2020</p>
+            <h5>Technikusi év: VMSzC Gépipari és Informatikai Technikum</h5>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores exercitationem dolores nemo culpa pariatur quis
+            Technikusi vizsga -> CAD - CAM Informatikus<br/>
+            [Iskolára ugyan csak nem lehet panaszom, a legjobb tanárokat kaptam]
             </p>
           </div>
           <div class="timeline-item">
             <div class="tl-icon4">
               <i class="fas fa-briefcase"></i>
             </div>
-            <p class="tl-duration">2015 - napjainkig</p>
-            <h5>Középiskola: Gépipari 2015 - 2018</h5>
+            <p class="tl-duration">2020 - napjainkig</p>
+            <h5>Egyetem: ELTE Savaria Egyetemi Központ</h5>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores exercitationem dolores nemo culpa pariatur quis
+              Jelenleg Programtervező Informatikus hallgató vagyok, 
+              remélhetőleg majd az informatika valamelyik ágán tudok majd elhelyezkedni
             </p>
           </div>
           <div class="timeline-item">
             <div class="tl-icon5">
               <i class="fas fa-briefcase"></i>
             </div>
-            <p class="tl-duration">2015 - napjainkig</p>
-            <h5>Középiskola: Gépipari 2015 - 2018</h5>
+            <p class="tl-duration">... - napjainkig</p>
+            <h5>Összefoglalva</h5>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores exercitationem dolores nemo culpa pariatur quis
+              Mindegyik iskolámmal, tanárommal meg vagyok elégedve
+              Szóval nagyon örülök, hogy ilyen helyekre járhattam / járhatom :)
             </p>
           </div>
-          <div class="timeline-item">
-            <div class="tl-icon6">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <p class="tl-duration">2015 - napjainkig</p>
-            <h5>Középiskola: Gépipari 2015 - 2018</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores exercitationem dolores nemo culpa pariatur quis
-            </p>
-          </div>
+          
         </div>
       </section>
       <section class="section sec3" id="portfolio">
@@ -592,10 +600,8 @@
           <div class="left-contact">
             <h4>Itt elérhet engem</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum
-              nemo facere dignissimos modi perferendis ullam tenetur hic quae
-              eius aspernatur? Ducimus unde odit natus, eaque error eius?
-              Veniam, id sapiente!
+              Az alábbi adatok, linkek [Facebook, ...] alapján elérhettek, 
+              vagy pedig a mezők kitöltése után az "Elküld" gomb megnyomásával
             </p>
             <div class="contact-info">
               <div class="contact-item">
@@ -613,7 +619,7 @@
                   <span>Email:</span>
                 </div>
                 <p>
-                  <span>afgh@gmail.com</span>
+                  <span>oradam86@gmail.com</span>
                 </p>
               </div>
               <div class="contact-item">
@@ -622,7 +628,7 @@
                   <span>Tanulmányaim:</span>
                 </div>
                 <p>
-                  <span>ELTE Szombathely</span>
+                  <span>ELTE SEK</span>
                 </p>
               </div>
               <div class="contact-item">
@@ -631,7 +637,7 @@
                   <span>Mobil:</span>
                 </div>
                 <p>
-                  <span>06/301-215414</span>
+                  <span>06/30-2017316</span>
                 </p>
               </div>
               <div class="contact-item">
@@ -646,16 +652,16 @@
             </div>
             <div class="contact-icons">
               <div class="contact-icon">
-                <a href="#" target="_blank">
+                <a href="https://www.facebook.com/profile.php?id=100009870428509" target="_blank">
                   <i class="fab fa-facebook"></i>
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://www.instagram.com/oradam86/" target="_blank">
                   <i class="fab fa-instagram"></i>
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://github.com/JAM5BOCsAdi" target="_blank">
                   <i class="fab fa-github"></i>
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://www.youtube.com/channel/UCYGlVtACi_4kXvJIvf7Xaqg" target="_blank">
                   <i class="fab fa-youtube"></i>
                 </a>
               </div>

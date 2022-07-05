@@ -249,10 +249,6 @@ section {
 .header-content .right-header .name {
   font-size: 3rem;
 }
-.header-content .right-header .name .hello {
-  color: var(--color-secondary);
-  font-style: italic;
-}
 .header-content .right-header .name .adi {
   color: var(--color-secondary);
   border: 0.063rem solid var(--color-white);
@@ -263,7 +259,8 @@ section {
   margin: 1.5rem 0;
   line-height: 2rem;
 }
-.header-content .right-header p span {
+
+.color {
   color: var(--color-secondary);
   font-weight: bold;
 }
@@ -383,7 +380,7 @@ section {
   width: 50%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .sql,
-.about-stats .progress-bars .progress-bar .progress-con .progress .cnc-code {
+.about-stats .progress-bars .progress-bar .progress-con .progress .cnc-code-hand {
   width: 60%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .css,
@@ -400,7 +397,8 @@ section {
 .about-stats .progress-bars .progress-bar .progress-con .progress .solidedge {
   width: 80%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .creativity {
+.about-stats .progress-bars .progress-bar .progress-con .progress .creativity,
+.about-stats .progress-bars .progress-bar .progress-con .progress .cnc-code-machine {
   width: 100%;
 }
 .about-stats .stat-title {

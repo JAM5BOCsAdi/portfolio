@@ -273,11 +273,6 @@ section {
     .name {
       font-size: 3rem;
 
-      .hello {
-        color: var(--color-secondary);
-        font-style: italic;
-      }
-
       .adi {
         color: var(--color-secondary);
         border: 0.063rem solid var(--color-white);
@@ -290,14 +285,14 @@ section {
       margin: 1.5rem 0;
       line-height: 2rem;
 
-      span {
-        color: var(--color-secondary);
-        font-weight: bold;
-      }
+
     }
   }
 }
-
+.color {
+  color: var(--color-secondary);
+  font-weight: bold;
+}
 // About
 .about-container {
   display: grid;
@@ -431,7 +426,7 @@ section {
           }
 
           .sql,
-          .cnc-code {
+          .cnc-code-hand {
             width: 60%;
           }
 
@@ -451,8 +446,8 @@ section {
           .solidedge {
             width: 80%;
           }
-
-          .creativity {
+          .creativity,
+          .cnc-code-machine {
             width: 100%;
           }
         }
