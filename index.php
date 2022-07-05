@@ -601,7 +601,10 @@
             <h4>Itt elérhet engem</h4>
             <p>
               Az alábbi adatok, linkek [Facebook, ...] alapján elérhettek, 
-              vagy pedig a mezők kitöltése után az "Elküld" gomb megnyomásával
+              vagy pedig a mezők kitöltése után az <span class="color">"Elküld"</span> gomb megnyomásával
+              <br />
+              Ha esetleg az <span class="color">érdeklődést felkeltettem</span>, akkor nyugodtan hívjatok/írjatok, 
+              és még <span class="color">több információt</span> tudok mondani a jelen tudásomról
             </p>
             <div class="contact-info">
               <div class="contact-item">
